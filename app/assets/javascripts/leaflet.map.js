@@ -179,7 +179,7 @@ L.OSM.Map = L.Map.extend({
     params.lon = latLng.lng.toFixed(precision);
     params.zoom = this.getZoom();
 
-    return 'geo:' + params.lat + ',' + params.lon + '?z=' + params.zoom;
+    return 'geo:' + params.lat + ',' + params.lon + ';z=' + params.zoom;
   },
 
   addObject: function(object, callback) {
